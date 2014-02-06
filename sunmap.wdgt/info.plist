@@ -19,8 +19,8 @@
 	<key>AllowNetworkAccess</key>
 	<true/>
 	<key>Width</key>
-	<integer>1280</integer>
+	<integer>640</integer>
 	<key>Height</key>
-	<integer>710</integer>
+	<integer>355</integer>
 </dict>
 </plist>
