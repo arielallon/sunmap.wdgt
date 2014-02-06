@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <img width="640" border="1" id="earth" src="http://static.die.net/earth/mercator/640.jpg">
+        <script>
+        // Let's set refresh time to 5 seconds
+        var N = 60;
+
+        // Function that refreshes image
+        function refresh(imageId, imageSrc) {
+            var image = document.getElementById(imageId);
+            var timestamp = new Date().getTime();
+            image.src = imageSrc + '#' + timestamp;       
+        }
+
+        // Refresh image every N seconds
+        setTimeout(function() {
+            refresh('earth', 'http://static.die.net/earth/mercator/640.jpg');
+        }, N * 1000);
+        </script>
+    </body>
+</html>
